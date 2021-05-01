@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+h1{
+    color:rgb(231, 121, 185);
+    font-weight: 600;
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+h2{
+    color:rgb(116, 11, 54);
+    font-weight: 600;
+    
+    opacity: 0.8;
+}
+h3{
+    color:rgb(175, 81, 163);
+    font-weight: 600;
+    opacity: 0.8;
+}
+main{
+    font-family: 'Raleway', sans-serif;
+    /* 100vh means covering the whole  */
+    min-height: 100vh; 
+    background:linear-gradient(to right top,#FF84C2, #FFC3D8);
+    /* these 3 lines are to make items center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background:white;
+    min-height:90vh;
+    width:75%;
+    /* rgba allows for opacity */
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,0.2)) ;
+    border-radius:2rem ;
+    /* z-index will take it forward */
+    z-index: 2;
+    display: flex;
+    /* to make  blur */
+    backdrop-filter:blur(2rem);
+}
+.circle1,.circle2{
+    background:white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,.8),rgba(255,255,255,0.2)) ;
+height: 15rem;
+width: 15rem;
+position: absolute;
+border-radius: 50%;
+}
+
+.circle1{
+    top: 5%;
+    right: 5%;
+}
+.circle2{
+    bottom: 5%;
+    left: 4%;
+}
+.dashboard{
+    flex: 1;
+    /* flex for putting horizontally equally */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* left right e evenly space dei */
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,0.2)) ;
+    border-radius:2rem ; 
+}
+.games{
+    flex: 2;
+}
+.link{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem ;
+    align-items: center;
+}
+.link h2{
+    padding:0rem 1rem;
+}
+ 
+.pro{
+    background: linear-gradient(to right top,#FF84C2, #FFC3D8) ;
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pro img{
+    position: absolute;
+    top:-10%;
+    right:10%;
+}
+.pro h3{
+    width: 40%;
+    color: white;
+}
+
+/* Games Section */
+.status{
+    margin-bottom: 3rem;
+}
+.status input{
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,0.2)) ;
+    border:none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius:2rem ;
+}
+.games{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5rem;
+}
+.card{
+    display:flex;
+    background: linear-gradient(to left top,
+    rgba(255,255,255,7),
+    rgba(255,255,255,0.3));
+    border-radius: 1rem;
+    /* 2 rem on top, 0rem left and right */
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.164);
+    justify-content: space-between;
+}
+
+.progress{
+    background: linear-gradient(to right top,
+    #fdd5e9, #ffaee7) ;
+    width:100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.progress::after{
+    content:"";
+    width:100%;
+    height:100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left:60%;
+}
