@@ -36,8 +36,8 @@ main{
     width:75%;
     /* rgba allows for opacity */
     background: linear-gradient(to right bottom,
-    rgba(255,255,255,0.5),
-    rgba(255,255,255,0.2)) ;
+    rgba(255,255,255,0.4),
+    rgba(255,255,255,0.1)) ;
     border-radius:2rem ;
     /* z-index will take it forward */
     z-index: 2;
